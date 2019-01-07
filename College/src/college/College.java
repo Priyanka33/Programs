@@ -13,11 +13,11 @@ class College {
     ArrayList<Student> Students = new ArrayList<>();
 
     public ArrayList<Department> createDepartment() throws IOException, ParseException {
-        boolean flag = false;
+        boolean flag = true;
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 3; i++) {
             Department department = new Department();
-            while (flag == false) {
+            while (flag == true) {
                 System.out.println("enter Department");
 
                 department.departmentname = in.readLine();
@@ -40,13 +40,13 @@ class College {
     }
 
     public static void main(String as[]) throws IOException, ParseException {
-        boolean flag = false;
+        boolean flag = true;
         ArrayList<Department> departments = new ArrayList<>();
         College college = new College();
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("enter College name");
-        while (flag == false) {
+        while (flag == true) {
             college.collegename = in.readLine();
 
             if (college.collegename.length() <= 50) {

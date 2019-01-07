@@ -10,7 +10,6 @@ public class Department {
 
     String departmentname;
     ArrayList<Student> students = new ArrayList<>();
-boolean flag=false;
     ArrayList<Student> createStudent() throws IOException, ParseException {
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         for (int i = 0; i < 3; i++) {

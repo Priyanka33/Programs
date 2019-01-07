@@ -23,7 +23,7 @@ public class Department {
                 System.out.print("ENTER dob  (mm/dd/yyyy ): ");
                 String dob = in.readLine();
                 Date date = new SimpleDateFormat("mm/dd/yyyy").parse(dob);
-                student.dob=dob;
+                student.dob=date;
             } catch (Exception e) {
 
             }

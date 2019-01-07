@@ -5,10 +5,6 @@
  */
 package college;
 
-/**
- *
- * @author prinakaa
- */
 public class Student {
     
     String studentname;
